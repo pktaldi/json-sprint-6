@@ -2,8 +2,8 @@
 
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
-const pasta = new URL("../data/", import.meta.url);
-const arquivo = new URL("../data/mensagens.json", import.meta.url);
+const pasta = new URL("data/", import.meta.url);
+const arquivo = new URL("data/mensagens.json", import.meta.url);
 
 export async function lerMensagens() {
   try {
